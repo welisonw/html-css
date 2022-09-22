@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>   
+        <p>É possível utilizar links externos dentro do site utilizando a tag &lt;a&gt; de <em>anchor</em> (âncora). Dentro da tag, aparecerá o parâmetro <em>href</em>, que significa <em>hipertext reference</em>, que indica que é para onde o meu site vai:</p>
+        <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io/">repositório público no GitHub</a></p>
+        <p>Ainda, você pode acessar o meu <a href="https://youtube.com/cursoemvideo/">canal no Youtube</a></p>
+        <p>Nos dois exemplos acima, ao clicar nos hiperlinks, os sites abrirão na mesma aba. Há a opção do hiperlink abrir em nova aba usando o parâmetro <em>target</em> (alvo) após a indicação do hiperlink, atribuindo o valor <em>_blank</em> (o valor <em>_self</em> abre o link na janela ou frame atual (padrão)):</p>
+        <p>Você pode acessar meu <a href="https://youtube.com/cursoemvideo/" target="_blank" rel= "external">canal no Youtube</a>.</p>
+        <p>Dentro da tag, ainda, é recomendado indicar se esse hiperlink é seu/interno ou de outra pessoa/externo (que vai pra fora do meu site). Para isso, basta utilizar o parâmetro <em>rel</em> (<em>relative</em>), atribuindo um dos seguintes valores:</p>
+            <ul type="square">
+                <li><em>next</em> indica que o link é para a próxima parte do documento atual.</li>
+                <li><em>prev</em> indica que o link é para a parte anterior do documento atual.</li>
+                <li><em>author</em> indica que é um link para o site do autor do artigo atual.</li>
+                <li><em>external</em> indica que é um link para outro site que não faz parte do site atual.</li>
+                <li><em>nofollow</em> indica que é um link para um site não endossado, como um link pago.</li>
+            </ul>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../ex006/favicon.ico" type="image/x-icon">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>   
+        <p>É possível utilizar links externos dentro do site utilizando a tag <ins>&lt;a&gt;</ins> de <em>anchor</em> (âncora). Dentro da tag, aparecerá o parâmetro <em>href</em>, que significa <em>hipertext reference</em>, que indica que é para onde o meu site vai:</p>
+        <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io/" target="_self">repositório público no GitHub</a></p>
+        <p>Ainda, você pode acessar o meu <a href="https://youtube.com/cursoemvideo/" target="_self">canal no Youtube</a></p>
+        <p>Nos dois exemplos acima, ao clicar nos hiperlinks, os sites abrirão na mesma aba. Há a opção do hiperlink abrir em nova aba usando o parâmetro <em>target</em> (alvo) após a indicação do hiperlink, atribuindo o valor <em>_blank</em> (o valor <em>_self</em> abre o link na janela ou frame atual (padrão)):</p>
+        <p>Você pode acessar meu <a href="https://youtube.com/cursoemvideo/" target="_blank" rel= "external">canal no Youtube</a>.</p>
+        <p>Dentro da tag, ainda, é recomendado indicar se esse hiperlink é seu/interno ou de outra pessoa/externo (que vai pra fora do meu site). Para isso, basta utilizar o parâmetro <em>rel</em> (<em>relative</em>), atribuindo um dos seguintes valores:</p>
+            <ul type="disc">
+                <li><em>next</em> indica que o link é para a próxima parte do documento atual.</li>
+                <li><em>prev</em> indica que o link é para a parte anterior do documento atual.</li>
+                <li><em>author</em> indica que é um link para o site do autor do artigo atual.</li>
+                <li><em>external</em> indica que é um link para outro site que não faz parte do site atual.</li>
+                <li><em>nofollow</em> indica que é um link para um site não endossado, como um link pago.</li>
+            </ul>
+    <h1>Usando links internos</h1>
+        <p>Links internos vão fazer relação com outra página que está dentro do nosso servidor e diz respeito à nossa própria página. Nesse caso, é necessária a criação de outras páginas:</p>
+            <p>Esta é a minha primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" rel="next">segunda página</a></p>     
+            <p>Quando eu faço um link interno, não preciso indicar a URL inteira, contanto que a "pag002" esteja dentro da mesma pasta do index.</p> 
+            <p>Pode-se, ainda, criar links internos com caminho:</p>
+            <p>Você pode também acessar a nossa <a href="noticias/pag003.html" target="_self" rel="next">página de notícias</a>.</p>
+    <h1>Links para download</h1>
+        <p>Para adicionar arquivos para download, basta adicionar dentro da tag &lt;a&gt; o diretório do arquivo, seguido do parâmentro <em>download</em>, com o nome do arquivo e sua extensão, e do parâmentro <em>type</em>, indicando o tipo de arquivo está sendo baixado (lista das <em>media types</em>: <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="external">Iana.org</a>):</p>
+            <ul>
+                <li><a href="livro/meulivro.pdf" target="_blank" download="meulivro.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+                <li><a href="livro/meulivro.zip" download="meulivro.zip" type="application/zip">Livro compactado em ZIP</a></li>
+            </ul>
+</body>
+</html>

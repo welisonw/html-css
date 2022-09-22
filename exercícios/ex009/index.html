@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+        <h2>Código-fonte/Pré-formatação</h2>
+            <p>O comando <code>document.getElementById ('teste')</code> é escrito em linguagem JavaScript. Essa formatação deixa a fonte mono-espaçada (ótima para ler códigos), indicando ao navegador que se trata de um código de computador. Basta utilizar a tag &lt;code&gt;.</p>
+            <p>Outro exemplo, citando trecho de um código da linguagem Python:</p>
+                <pre>
+                    <code>
+                        num = int(imput ('Digite um número:'))
+                        if num % 2 == 0
+                            print(f'O número {num} é PAR!')
+                        else:
+                            print(f'O número {num} é ÍMPAR!')
+                        print('Fim do programa')
+                    </code>
+                </pre>
+            <p>Neste exemplo, foi utilizado a tag &lt;code&gt;. Contudo, na visualização, o código aparecerá desconfigurado, com as linhas uma ao lado da outra.</p>
+            <p>Para resolver isso, envelopar a tag &lt;code&gt; dentro da tag &lt;pre&gt;, que serve para mantém o texto pré-formatado, exatamente da mesma maneira na qual ele foi digitado, incluindo quebras de linhas, espaços e tabulações.</p>
+        <h2>Citação simples</h2>    
+            <p>É possível, ainda, fazer citações utilizando a tag &lt;q&gt; (do inglês <em>quote</em>, que significa citar), como por exemplo, na seguinte frase:</p>
+                <p>O pai do meu amigo sempre dizia: <q>O computador é um burro rápido</q>.</p>
+                <p>Nesse exemplo, poderia simplesmente utilizar aspas (") no início e fim da frase. Porém, ao usar a tag Q, você atribui um significado à ela.</p>
+        <h2>Citação composta/com recúo</h2>    
+            <p>Citações compostas utilizam a tag &lt;blockquote&gt;:</p>
+            <p>Seguro Aury Lopes Júnior, em seu livro Prisões cautelares:</p>
+                <blockquote cite="https://www.google.com.br/books/edition/Prisões_Cautelares_6ª_Edição_2021/c0MmEAAAQBAJ?hl=pt-BR&gbpv=1&dq=aury+lopes+junior&printsec=frontcover">A presunção de inocência impõe um verdadeiro <em>dever de tratamento</em> (na medida em que exige que o réu seja tratado como inocente), que atua em duas dimensões: interna ao processo e externa a ele.</blockquote> <!-- "Cite" acima não é executado, mas servirá para mecanismos de busca, como o Google, por exemplo -->
+        <h2>Abreviação</h2>
+            <p>Utilizar a tag &lt;abbr&gt;. Ao passar o mouse por cima da sigla, aparecerá um pop-up com seu significado:</p>
+            <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p>
+        <h2>Texto invertido</h2>
+            <p>Para inverter o texto escrito, utilizar a tag &lt;bdo&gt;. BDO significa <em>bi-directional override</em>:</p>
+                <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo></p>
+</body>
+</html>

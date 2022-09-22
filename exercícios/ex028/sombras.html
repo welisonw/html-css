@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags com Sombras e Bordas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(250, 226, 230);
+            margin: 80px;
+        }
+        
+        header {
+            background-color: white;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 7px 7px;
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.749);
+        }
+
+        nav {
+            background-color: rgb(159, 148, 132);
+            padding: 5px;
+            text-align: center;
+            box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.774); /* é possível utilizar o Dev Tools do Google Chrome */
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: darkblue;
+            font-weight: bold;
+            margin-right: 30px;
+            text-align: center;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        
+        article > p {
+            text-align: justify;
+        }
+
+        main {
+            background-color: white;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 7px 7px;
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.749);
+        }
+
+        article {
+            background-color: rgb(247, 222, 218);
+            padding-top: 1px;
+            padding-right: 50px;
+            padding-bottom: 1px;
+            padding-left: 50px;
+            margin: 3px;
+            border-radius: 4px 4px;
+        }
+
+        article > aside {
+            background-color: rgb(243, 215, 212);
+            text-indent: 3em;
+            border-radius: 4px 4px;
+        }
+
+        aside > p {
+            margin: 0px;
+            padding: 3px;
+        }
+
+        footer {
+            background-color: rgba(136, 133, 130, 0.889);
+            color: white;
+            padding: 3px;
+            margin: 10px;
+            text-align: center;
+            font-weight: bold;
+            box-shadow: 1px 1px 1px black;
+            border-radius: 3px 3px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        footer > p > a {
+            text-decoration: none;
+            color: white;
+        }
+
+        footer > p > a:hover {
+            text-decoration: underline;
+        } 
+
+        h1#principal {
+            text-align: center;
+            text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.636);
+        }
+
+        div#bola {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="principal">Meu Site</h1>
+            <nav>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+            </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <article>
+                <h2>Esportes, Política e Tecnologia</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, accusantium harum? Vitae reprehenderit dolore dolorum mollitia ducimus excepturi rem quasi error, consectetur ipsum! Pariatur, voluptate reprehenderit. Fuga, accusamus. Necessitatibus, reiciendis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis animi esse temporibus dolores aut commodi? Consequuntur aut ut esse aspernatur beatae, vero reprehenderit praesentium nihil numquam laudantium nostrum consectetur repudiandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem tempora vel libero animi quo, unde accusantium autem rerum, reprehenderit perferendis perspiciatis porro ullam, sequi dignissimos. Sed sint dolor velit soluta.</p>
+            </article>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, dolorum. Saepe, possimus! Reiciendis cumque molestias nesciunt distinctio cum fugiat illo quos, tempora ea facilis quaerat adipisci magni recusandae dignissimos? Necessitatibus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias ex illum accusamus aliquid culpa, blanditiis magni aspernatur minus, iure laudantium non nisi saepe voluptates similique! Natus sed adipisci consectetur corrupti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis pariatur rem aperiam tenetur, numquam inventore ad, voluptates quod facere beatae iusto voluptatum maxime temporibus suscipit eius quas deserunt, labore eum?</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por <a href="#">CursoemVideo</a></p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
