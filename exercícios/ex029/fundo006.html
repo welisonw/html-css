@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Imagem de Fundo</title>
+    <style>
+        body {
+            height: 100vh;
+            background-color: black;
+            background-image: url('imagens/wallpaper002.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            /* Valores aceitos pela propriedade background-size:
+            - auto: é o padrão. A imagem de fundo será aplicada em seu tamanho original.
+            - length (px, %): redimensiona a largura da imagem e faz a altura se adaptar automaticamente. Podemos também informar as duas dimensões na sequência ou também usar valores percentuais.
+            - container: redimensiona a imagem para que ela cubra o contêiner, mesmo que para isso ocorram alguns eventuais cortes. Cria margens na -
+            - cover: muda o tamanho da imagem para que ela seja sempre totalmente exibida na tela, sem nenhum corte. Ocupa 100% da view-port.
+            */
+        }
+
+        main {
+            background-color: white;
+            width: 500px;
+            padding: 10px;
+            margin: auto;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+
+        main h1 {
+            text-align: center;
+
+        }
+
+        main p {
+            text-align: justify;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Imagem de Fundo</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quae veniam laborum velit dolores facere, nisi omnis ipsum, modi aliquid laudantium eos consequuntur aut natus corporis dicta sint distinctio cumque! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit minima velit officiis quod nobis at repudiandae consequuntur nostrum expedita culpa ipsam dignissimos nam consequatur quasi ratione, maiores ullam. Aperiam, earum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex totam animi tempore a nemo, repellendus architecto quo vitae voluptate recusandae odit. Porro et totam excepturi itaque hic incidunt sed enim?</p>
+    </main>
+</body>
+</html>
