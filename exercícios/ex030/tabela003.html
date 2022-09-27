@@ -15,6 +15,12 @@
             border-collapse: collapse;
         }
 
+        caption {
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 5px;
+        }
+
         td, th {
             padding: 6px;
             border: 1px solid black;
@@ -23,6 +29,11 @@
         thead, tfoot {
             background-color: grey;
             color: white;
+        }
+
+        tbody > tr:nth-child(2n) /* 2n = de 2 em 2 ou pode-se utilizar odd (ímpar) ou even (par)*/ 
+         {
+            background-color: lightcyan;
         }
 
         td.num {
@@ -37,6 +48,7 @@
     <h1>Lista de unidades federativas do Brasil por população em julho de 2021</h1>
         <!--
             ANATOMIA PARA TABELAS GRANDES:
+                - CAPTION (Legenda): não pode TR, nem TD
                 - TABLE
                     - THEAD
                         - TR, TD, TH
@@ -46,11 +58,14 @@
                         - TR, TD, TH
         -->
     <table>
+        <caption>
+            População das Unidades Federativas do Brasil
+        </caption>
         <thead>
             <tr>
-                <th>Unidade Federativa</th>
-                <th>População</th>
-                <th>% da População Total</th>
+                <th scope="col">Unidade Federativa</th>
+                <th scope="col">População</th>
+                <th style="width: 150px;">% da População Total</th>
             </tr>
         </thead>
         <tbody>
@@ -219,7 +234,7 @@
 
         </tbody>
         <tfoot>
-            <th>Total de Habitantes</th>
+            <th scope="row">Total de Habitantes</th>
             <td class="num"><strong>213.317.639</strong></td>
             <td class="num"><strong>100%</strong></td>
         </tfoot>
