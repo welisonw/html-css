@@ -13,10 +13,25 @@
 </head>
 <body>
     <h1>Meu primeiro formuláriio</h1>
-    <form>
-        <p>Nome: <input type="text" name="nome" id="nome"></p>
-        <p>Sobrenome <input type="text" name="sobrenome" id="sobrenome"></p>
+    <form action="cadastro.php" autocomplete="off" method="post"> <!-- cadastro.php é da linguagem PHP -->
+        <p><label for="idnome">Nome:</label> <input type="text" name="nome" id="idnome"></p>
+        <p><label for="idsobrenome">Sobrenome</label> <input type="text" name="sobrenome" id="idsobrenome"></p>
         <p><input type="submit" value="Enviar"></p>
+        <!--
+            DIFERENÇA ENTRE NAME E ID:
+
+            NAME = é mais útil para o HTML e CSS; 
+            ID = é mais útil para o JavaScript, inclusive para o uso do Label.
+
+            OBS: não se faz formulário sem atribuir o label ao seu input
+        -->
+
+        <!--
+            MÉTODOS DE ENVIO DE DADOS:
+
+            GET = Esse é o método padrão. Tem limite de dados (3.000 bytes). Não utilizar com dados sensíveis. Não aceita foto.
+            POST = Não apresenta os dados de forma explícita ao usuário.
+        -->
     </form>
 </body>
 </html>
